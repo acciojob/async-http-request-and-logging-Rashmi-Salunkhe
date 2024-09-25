@@ -25,8 +25,8 @@
                 // Parsing the response body as JSON
                 const data = await response.json();
 
-                // Logging the response to the console in a human-readable format
-                console.log("API Response:", JSON.stringify(data, null, 2));
+                // Logging the response directly as an object, not a string
+                console.log(data);
 
             } catch (error) {
                 // Handling any errors that occurred during the fetch
